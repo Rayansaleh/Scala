@@ -1,3 +1,5 @@
+// Print the last but one element of a list
+
 def findLastButOne[A](elements: List[A]): A = elements match {
     case y :: List(w) => y
     case _ :: tail => findLastButOne(tail)

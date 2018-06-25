@@ -1,3 +1,5 @@
+//Pack element directly into a list with their number
+
 def packnbElements[A](elements: List[A]): List[(Int, Any)] = {
 
   if(elements.isEmpty) Nil

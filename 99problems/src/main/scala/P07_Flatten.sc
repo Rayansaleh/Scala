@@ -1,3 +1,5 @@
+//Concatenate two lists in one
+
 def flatten(elements: List[Any]): List[Any] = elements flatMap {
   case y : List[_] => flatten(y)
   case w => List(w)

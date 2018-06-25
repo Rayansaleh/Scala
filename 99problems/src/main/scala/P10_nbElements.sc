@@ -1,3 +1,5 @@
+//Pack same elements together and print them with their given number
+
 def nbElements[A](elements: List[A]): List[(Int, A)] = {
   packElement(elements) map { e => (e.length, e.head)}
 }

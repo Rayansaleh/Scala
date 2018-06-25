@@ -1,3 +1,5 @@
+//Duplicate every element of the list depending on the number of time given
+
 def duplicateElementsV2[A](nb: Int, elements: List[Char]): List[Char] = {
 
   elements flatMap {case c: Char => List.fill(nb)(c).mkString}

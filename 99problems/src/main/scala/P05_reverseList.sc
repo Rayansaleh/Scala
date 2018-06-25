@@ -1,3 +1,5 @@
+//Print the list but reversed
+
 def reverseList[A](elements: List[A]): List[A] =  {
   elements.foldLeft(List[A]()) { (r, h) => h :: r}
 }

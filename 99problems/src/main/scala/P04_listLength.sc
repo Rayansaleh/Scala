@@ -1,8 +1,4 @@
-/*def listLength[A](elements: List[A]): Int = {
-  var compt = 0
-  elements.foreach(x => compt += 1)
-  compt
-}*/
+//Print the list's size
 
 def listLength[A](elements: List[A]): Int = elements.foldLeft(0) {
   (y, _) => y + 1

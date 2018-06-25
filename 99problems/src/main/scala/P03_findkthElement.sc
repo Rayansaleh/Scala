@@ -1,3 +1,5 @@
+//Print the element of your choice depending of index written in parameters
+
 def findKthElement[A](index: Int, elements: List[A]): A = (index, elements) match{
   case (0, y :: _) => y
   case (index, _ :: tail) if index > 0 => findKthElement(index - 1, tail)

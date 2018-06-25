@@ -1,3 +1,5 @@
+//Pack same elements together from left to right
+
 def packElement[A](elements: List[A]): List[List[A]] = {
 
   if(elements.isEmpty) List(List())

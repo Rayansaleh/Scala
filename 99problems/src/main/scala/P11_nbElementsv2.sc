@@ -1,3 +1,5 @@
+//Pack same elements together and print them with their given number except when their is only one
+
 def nbElementsv2[A](elements: List[A]): List[Any] = {
 
  nbElements(elements) map { case(h:Int, t) => if (h == 1) t else (h, t) }
