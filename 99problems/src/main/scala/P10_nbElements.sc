@@ -1,3 +1,7 @@
+def nbElements[A](elements: List[A]): List[(Int, A)] = {
+  packElement(elements) map { e => (e.length, e.head)}
+}
+
 def packElement[A](elements: List[A]): List[List[A]] = {
 
   if(elements.isEmpty) List(List())
@@ -12,4 +16,4 @@ def packElement[A](elements: List[A]): List[List[A]] = {
 
 val exl: List[String] = List("a", "a", "a", "a", "a", "a", "b", "b", "a", "a","c")
 
-packElement(exl)
+nbElements(exl)
